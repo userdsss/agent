@@ -57,3 +57,33 @@ def pdf_loader(filepath: str, passwd=None) -> list[Document]:
 
 def txt_loader(filepath: str) -> list[Document]:
     return TextLoader(filepath, encoding="utf-8").load()
+"""
+list document
+result = [
+    Document(  # 第1页
+        page_content="这是第1页的文字内容...",
+        metadata={
+            "source": "example.pdf",
+            "page": 1,
+            "page_label": "1"
+        }
+    ),
+    Document(  # 第2页
+        page_content="这是第2页的文字内容...",
+        metadata={
+            "source": "example.pdf", 
+            "page": 2,
+            "page_label": "2"
+        }
+    ),
+    Document(  # 第3页
+        page_content="这是第3页的文字内容...",
+        metadata={
+            "source": "example.pdf",
+            "page": 3,
+            "page_label": "3"
+        }
+    )
+] 
+长这个样子
+"""
