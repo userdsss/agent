@@ -1,3 +1,4 @@
+
 collection_name: agent
 persist_directory: chroma_db
 k: 3
